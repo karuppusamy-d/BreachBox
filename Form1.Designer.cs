@@ -1,6 +1,6 @@
 ﻿namespace BreachBox
 {
-    partial class Form1
+    partial class BreachBox
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BreachBox));
             this.submit = new System.Windows.Forms.Button();
             this.password_input = new System.Windows.Forms.TextBox();
             this.submit_secure = new System.Windows.Forms.Button();
@@ -50,7 +51,6 @@
             this.password_input.Location = new System.Drawing.Point(55, 50);
             this.password_input.Name = "password_input";
             this.password_input.PasswordChar = '*';
-            this.password_input.ShortcutsEnabled = false;
             this.password_input.Size = new System.Drawing.Size(270, 22);
             this.password_input.TabIndex = 2;
             // 
@@ -73,7 +73,7 @@
             this.input_label.TabIndex = 4;
             this.input_label.Text = "Welcome to BreachBox";
             // 
-            // Form1
+            // BreachBox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -82,7 +82,9 @@
             this.Controls.Add(this.submit_secure);
             this.Controls.Add(this.password_input);
             this.Controls.Add(this.submit);
-            this.Name = "Form1";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "BreachBox";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "BreachBox";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BreachBox
 {
-    public partial class Form1 : Form
+    public partial class BreachBox : Form
     {
-        public Form1()
+        public BreachBox()
         {
             InitializeComponent();
         }
@@ -27,10 +27,10 @@ namespace BreachBox
             String password = password_input.Text;
             bool result = PasswordValidator.checkKey(password);
             if (result) {
-                MessageBox.Show("Access Granted: Level Up Your Hacker Hat!", "Access Granted");
+                MessageBox.Show("Access Granted: Congratulations, Code Whisperer!", "Access Granted", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             } else
             {
-                MessageBox.Show("Access Denied: Did You Forget to Wear Your Hacker Hat?", "Access Denied");
+                MessageBox.Show("Access Denied: Did You Try ‘Password123’? 🙃", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -40,11 +40,11 @@ namespace BreachBox
             bool result = PasswordValidator.secureCheckKey(password);
             if (result)
             {
-                MessageBox.Show("Access Granted: Level Up Your Hacker Hat!", "Access Granted");
+                MessageBox.Show("Access Granted: Level Up Your Hacker Hat!", "Access Granted", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
             else
             {
-                MessageBox.Show("Access Denied: Did You Forget to Wear Your Hacker Hat?", "Access Denied");
+                MessageBox.Show("Access Denied: Did You Forget to Wear Your Hacker Hat?", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

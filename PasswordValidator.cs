@@ -9,7 +9,6 @@ namespace BreachBox
 {
     internal class PasswordValidator
     {
-        
         public static bool checkKey(String input) {
             // Ch3ckm@t3!
             String password = "Ch3ckm@t3!";
@@ -21,7 +20,6 @@ namespace BreachBox
             // ByteMeUp!256
             string password = "OTgxMzI3ODnpVGlEssEGYvDjavBt0CXI64X+T7ag+VQxSsZgEHxTmw==";
             String hashedPassword = HashPassword(input, Encoding.UTF8.GetBytes("98132789"));
-            Console.WriteLine("hashedPassword " + hashedPassword);
             return password.Equals(hashedPassword);
         }
 
