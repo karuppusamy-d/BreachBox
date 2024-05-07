@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BreachBox));
-            this.submit = new System.Windows.Forms.Button();
-            this.password_input = new System.Windows.Forms.TextBox();
-            this.submit_secure = new System.Windows.Forms.Button();
             this.input_label = new System.Windows.Forms.Label();
+            this.password_input = new System.Windows.Forms.TextBox();
+            this.submit = new System.Windows.Forms.Button();
+            this.submit_secure = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // submit
@@ -40,7 +40,7 @@
             this.submit.Location = new System.Drawing.Point(55, 87);
             this.submit.Name = "submit";
             this.submit.Size = new System.Drawing.Size(75, 34);
-            this.submit.TabIndex = 0;
+            this.submit.TabIndex = 2;
             this.submit.Text = "Submit";
             this.submit.UseVisualStyleBackColor = true;
             this.submit.Click += new System.EventHandler(this.submit_Click);
@@ -52,8 +52,8 @@
             this.password_input.Name = "password_input";
             this.password_input.PasswordChar = '*';
             this.password_input.Size = new System.Drawing.Size(270, 22);
-            this.password_input.TabIndex = 2;
-            // 
+            this.password_input.TabIndex = 1;
+           // 
             // submit_secure
             // 
             this.submit_secure.Location = new System.Drawing.Point(136, 87);
@@ -70,7 +70,7 @@
             this.input_label.Location = new System.Drawing.Point(52, 22);
             this.input_label.Name = "input_label";
             this.input_label.Size = new System.Drawing.Size(148, 16);
-            this.input_label.TabIndex = 4;
+            this.input_label.TabIndex = 0;
             this.input_label.Text = "Welcome to BreachBox";
             // 
             // BreachBox
@@ -79,14 +79,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(389, 158);
             this.Controls.Add(this.input_label);
-            this.Controls.Add(this.submit_secure);
             this.Controls.Add(this.password_input);
             this.Controls.Add(this.submit);
+            this.Controls.Add(this.submit_secure);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "BreachBox";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "BreachBox";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -94,10 +93,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button submit;
-        private System.Windows.Forms.TextBox password_input;
-        private System.Windows.Forms.Button submit_secure;
         private System.Windows.Forms.Label input_label;
+        private System.Windows.Forms.TextBox password_input;
+        private System.Windows.Forms.Button submit;
+        private System.Windows.Forms.Button submit_secure;
     }
 }
 
