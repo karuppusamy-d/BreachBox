@@ -23,6 +23,7 @@ namespace BreachBox
             return password.Equals(hashedPassword);
         }
 
+        // https://medium.com/@imAkash25/hashing-and-salting-passwords-in-c-0ee223f07e20
         static string HashPassword(string password, byte[] salt)
         {
             using (var sha256 = new SHA256Managed())
