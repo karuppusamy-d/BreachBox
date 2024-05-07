@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BreachBox", "BreachBox.csproj", "{49CC7C42-3660-4214-9DC0-D2620514CF8A}"
 EndProject
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "BreachBoxVB", "BreachBoxVB\BreachBoxVB.vbproj", "{B1AB3AD6-A13D-4B92-A477-2B7EB22A6658}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{49CC7C42-3660-4214-9DC0-D2620514CF8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49CC7C42-3660-4214-9DC0-D2620514CF8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49CC7C42-3660-4214-9DC0-D2620514CF8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1AB3AD6-A13D-4B92-A477-2B7EB22A6658}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1AB3AD6-A13D-4B92-A477-2B7EB22A6658}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1AB3AD6-A13D-4B92-A477-2B7EB22A6658}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1AB3AD6-A13D-4B92-A477-2B7EB22A6658}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
